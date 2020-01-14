@@ -13,7 +13,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 sns.set_context("notebook", font_scale=1.5, rc={"lines.linewidth": 2.5})
 
 
-orders = pd.read_csv('/Python_Solutions/5.5/olist_public_dataset_v2.csv')
+orders = pd.read_csv('./olist_public_dataset_v2.csv')
 
 
 
@@ -25,7 +25,7 @@ orders['order_estimated_delivery_date'] = pd.to_datetime(orders.order_estimated_
 orders['order_delivered_customer_date'] = pd.to_datetime(orders.order_delivered_customer_date).dt.date
 
 # get translations for category names
-translation = pd.read_csv('/Python_Solutions/5.5/product_category_name_translation.csv')
+translation = pd.read_csv('./product_category_name_translation.csv')
 orders = orders.merge(translation, on='product_category_name').drop('product_category_name', axis=1)
 
 orders.head(3)

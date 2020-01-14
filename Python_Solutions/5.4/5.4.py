@@ -7,7 +7,7 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt
 import seaborn as sns
 import cufflinks as cf
-import plotly.plotly as py
+#import plotly.plotly as py
 import plotly.graph_objs as go
 
 
@@ -18,7 +18,7 @@ init_notebook_mode(connected=True)
 # For example, running this (by clicking run or pressing Shift+Enter) will list the files in the input directory
 
 import os
-print(os.listdir("../input"))
+#print(os.listdir("../input"))
 
 # Any results you write to the current directory are saved as output.
 
